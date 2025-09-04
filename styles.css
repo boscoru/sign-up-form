@@ -1,0 +1,78 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: stretch;
+}
+
+body {
+    width: 1304px;
+    background-color: white;
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    background-image: url('unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face {
+  font-family: norse;
+  src: url(Norse-Bold.otf);
+}
+
+#logo {
+    color: blue;
+    font-family: norse;
+    font-size: 50px;
+}
+
+#logo-background {
+    display: flex;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 24px;
+}
