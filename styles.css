@@ -43,13 +43,10 @@ html {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: black;
     align-items: stretch;
 }
 
 body {
-    width: 1304px;
-    background-color: white;
     display: flex;
     align-items: stretch;
 }
@@ -65,14 +62,20 @@ body {
   src: url(Norse-Bold.otf);
 }
 
-#logo {
+#logo-text {
     color: blue;
     font-family: norse;
-    font-size: 50px;
+    font-size: 7em;
+    display: block;
 }
 
 #logo-background {
     display: flex;
     background-color: rgba(0, 0, 0, .5);
     padding: 24px;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
 }
